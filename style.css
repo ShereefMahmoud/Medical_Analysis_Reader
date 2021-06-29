@@ -1,0 +1,366 @@
+*{
+	margin: 0 ;
+	padding: 0 ;
+	font-family: sans-serif;
+	
+}
+/* login */
+
+.login{
+	margin: 0 auto;
+	background-image: url("image/back1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100vh ;
+}
+
+.contain{
+	width: 35%;
+	height: 60vh;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(44, 62, 80,0.7);
+	margin-top: 150px;
+	border-radius: 5% ;
+}
+
+.contain img{
+	width: 170px;
+	height: 170px;
+	margin-top: -80px;
+	border-radius: 50% ;
+	background-color: #5cb1cc ; 
+}
+
+.form-input [type="text"],[type="password"] {
+	margin-top: 30px;
+	height: 7vh;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding-left: 10px;
+	border-radius: 20px ;
+	border: none;
+	outline: 0 ;
+	margin-left: 0;
+}
+
+.person{
+	font-size: 30px ;
+	color: silver;
+	margin-right: 2%;
+}
+
+
+#btn-login{
+	margin-top: 15px ;
+	padding: 8px 12px;
+	border-radius: 10px ;
+	font-size: 20px;
+	
+}
+.forget{
+	margin-top: 5px;
+}
+.forget a{
+	text-decoration: none ;
+	color: whitesmoke;
+
+}
+.forget a:hover{
+	color: blue;
+}
+/* end logo */
+
+/* forget password */
+.reset_pass{
+	width: 30%;
+	height: 40vh;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(80, 90, 100, 0.7);
+	margin-top: 150px;
+	border-radius: 5% ;
+}
+/* start header */
+
+#sidebar{
+	width: 18%;
+      height: 100vh ; 
+      float: left;
+      position: fixed;
+}
+.nav-item:hover{
+      background-color: rgb(0, 100, 255);
+      border-radius: 10px;
+}
+.sidebar_logo{
+	height: 23vh ;
+}
+
+.sidebar_logo img{
+	width: 110px ;
+	height: 110px ;
+	border-radius: 50% ;
+	margin-left: 50px ;
+	margin-bottom: 10px ;
+}
+.sidebar_logo h5{
+	text-align: center;
+}
+.navbar_bottom{
+	margin-bottom: 10px; 
+	list-style-type: none; 
+	padding-left: 5px
+}
+.clearfix{
+	clear: both;
+}
+.background{
+	width: 100% ;
+	height: 100vh;
+	background-color: rgba(160,160, 160,0.5);
+	background-repeat: no-repeat;
+	background-size: 100% 100vh ;
+	background-attachment: fixed ;
+}
+
+/* end header */
+/* dashboard*/
+.content{
+	width: 82%;
+	float: right;
+	padding-right: 50px;
+	clear: both;
+}
+.content > h1{
+	padding-left: 32%;
+	padding-top: 15px;
+	font-size: 45px;
+	font-weight: bold;
+}
+.content .categ:hover{
+	background-color: rgba(58, 69, 80, 1);
+	transition: all;
+}
+.categ{
+	width: 18%;
+	height: 150px;
+	margin: 25px 35px ;
+	border-radius: 10px;
+	display: inline-block;
+	background-color:rgba(58, 69, 73, 0.7);
+}
+.categ img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 38%;
+	margin-top: 5px;
+}
+.categ h1{
+	text-align: center;
+	color: white;
+	padding-top: 15px;
+	font-weight: bold;
+}
+.categ p{
+	text-align: center;
+	font-style: italic;
+}
+
+.charts{
+	width: 82%;
+	display: inline-block;
+	clear: both;
+	float: right;
+}
+#columnchart_material{
+	width: 40%;
+	height: 60vh;
+	float: left;
+	border-radius: 10%;
+}
+#donutchart{
+	width: 60%;
+	height: 60vh;
+	float: right;
+}
+/* End of dashboard */
+
+/* All pages */
+
+.admin-page{
+	width: 82%;
+	float: right;
+}
+.admin-page h1{
+	text-align: center;
+	padding-top: 30px ;
+}
+#search{
+	margin-top: 50px;
+	margin-left: 10px ;
+}
+#search input{
+	width: 450px;
+}
+#add-icon{
+	font-size: 25px ;
+
+}
+#search a{
+	text-decoration: none;
+	color: black ;
+	margin-left: 400px;
+}
+
+#table{
+	margin-top: 30px ;
+	margin-right: 100px;
+}
+#table th{
+	font-size: 20px;
+	font-weight: bold;
+
+}
+#table td{
+	font-size: 19px;
+	font-style: italic;
+
+}
+
+#input span i{
+	font-size: 20px;
+}
+
+/* end all pages */
+
+/* Add Admin */
+#add{
+	width: 100% ;
+	height: 100vh ;
+	/*background-image: url("image/back2.jpg");*/
+	background-repeat: no-repeat;
+	background-size: 100% 100vh ;
+	float: left;
+}
+
+#add h1{
+	color: white ;
+	padding-top: 3vh ;
+	padding-left: 20%;
+}
+.add_admin{
+	width: 48% ;
+	height: 82vh ;
+	background-color: rgba(140, 140, 140,0.5);
+	border-radius: 5% ;
+	margin: 2vh 38% ;
+}
+
+.add_admin  div{
+	width: 90% ; 
+	margin: 0vh 5% ;
+}
+#btn-save{
+	margin-top: 2% ;
+	margin-left: 30%;
+	font-size: 18px;
+
+}
+#btn-cancel{
+	margin-top: 2% ;
+	margin-left: 15%;
+	font-size: 18px;
+}
+#add_profile{
+	font-size: 110px;
+    margin-left: 41%;
+    color: black;
+}
+
+/* delete page */
+#delete{
+    width: 30%;
+    height: 18vh;
+    margin: 30vh 35%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(140, 140, 140,0.4);
+}
+
+/* start show feedback */
+
+#show_feedback{
+	width: 70%;
+	margin: 10vh 15%;
+	background-color: rgba(140, 140, 140,0.5);
+}
+
+#show_feedback h5{
+	font-weight:bold;
+	font-size: 22px;
+}
+
+#btn-back{
+	color: black;
+	font-size: 25px;
+}
+
+#btn-delete-feedback{
+	margin-left: 90%;
+}
+
+/* end show feedback */
+
+/* start error privilage */
+#error{
+	width: 50%;
+	margin:35vh 27% ;
+}
+#error i{
+	font-size: 18px;
+	text-align: center;
+}
+/* end error privilage */
+
+/* start error login */
+
+#error-login{
+	width:35% ; 
+      margin :38vh 35% ; 
+      text-align: center;
+      font-size: 25px;
+}
+
+.opacity-error{
+	width:100% ;
+	height: 100vh;
+	background-color: rgba(150, 150, 150,.7);
+	background-size: 100% 100vh ;
+	position: fixed;
+}
+
+/* end error login */
+
+/* Update admin & analysis & profile */
+#update{
+	width:40% ; 
+	height: 100px; 
+	margin:25vh 30% ;
+}
+
+/* end Update admin & analysis & profile */
+
+/* user page */
+
+.is_active{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+      background-color:#31a24c; 
+      margin: 10px 20px;
+}
+
+/* end user page */
