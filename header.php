@@ -106,10 +106,13 @@ $num_rows_feedback=$values_feedback['total_feedback'];
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="dashboard.php" class="nav-link text-white " ><i class="bi bi-speedometer"></i> Dashboard</a>
+        <a href="dashboard.php" class="nav-link text-white " ><i class="bi bi-pie-chart-fill"></i> Dashboard</a>
       </li>
       <li class="nav-item">
-        <a href="analysis.php" class="nav-link text-white " ><i class="bi bi-graph-up"></i> Manage Analysis </a>
+        <a href="analysis.php" class="nav-link text-white " ><i class="bi bi-receipt-cutoff"></i> Manage Analysis </a>
+      </li>
+      <li class="nav-item">
+        <a href="symptoms.php" class="nav-link text-white "><i class="bi bi-thermometer-sun"></i> Manage Symptoms </a>
       </li>
       <li class="nav-item">
         <a href="admin.php" class="nav-link text-white "><i class="bi bi-people-fill"></i> Manage Admins </a>

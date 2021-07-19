@@ -95,6 +95,7 @@ if (count($errors)==0) {
   							<option value="analysis">Analysis</option>
   							<option value="user">User</option>
   							<option value="feedback">Feedback</option>
+  							<option value="symptoms">Symptoms</option>
 						</select>
 					</div>
 

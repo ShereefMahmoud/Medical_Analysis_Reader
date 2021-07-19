@@ -21,7 +21,7 @@ if(empty($description)) {array_push($errors, "Description is required ");}
 
 // check db for existing user with same username
 
-$user_check_query= "SELECT * FROM admin WHERE  name = '$analysisName' LIMIT 1";
+$user_check_query= "SELECT * FROM analysis_info WHERE  name = '$analysisName' LIMIT 1";
 
 $result = mysqli_query($link , $user_check_query);
 $user = mysqli_fetch_assoc($result);
@@ -34,7 +34,7 @@ if ($user) {
 // register the user if no errors 
 if (count($errors)==0) {
 
-	$query = "INSERT INTO admin (name ,url , details ) VALUES ('$analysisName','$analysisUrl','$description')";
+	$query = "INSERT INTO analysis_info (name ,url , details ) VALUES ('$analysisName','$analysisUrl','$description')";
 	mysqli_query($link,$query);
 	$_SESSION['name']=$analysisName;
 	$_SESSION['success']="You are Log in";

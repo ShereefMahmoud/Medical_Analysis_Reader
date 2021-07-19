@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 29, 2021 at 10:03 PM
+-- Generation Time: Jul 19, 2021 at 05:52 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.4.16
 
@@ -42,7 +42,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `user_name`, `email`, `password`, `address`, `phone`, `privilage`) VALUES
-(1, 'Shereef Mahmoud', 'shereefmahmoud3@gmail.com', '12345', 'shenbab,giza,badrashin', 1015514406, 'all'),
+(1, 'Shereef Mahmoud', 'shereefmahmoud3@gmail.com', '12345', 'giza,badrashin,shinbab', 1015514406, 'all'),
 (5, 'Ahmed Ali mahmoud', 'ahmedali@gmail.com', '123456', 'Badrashin', 2147483647, 'admin'),
 (6, 'mustafa magdy mohamed', 'mustafamagdy@gmail.com', '123456', 'giza,badrashin', 2147483, 'analysis');
 
@@ -181,7 +181,7 @@ CREATE TABLE `symptoms` (
   `SymptomsId` int(11) NOT NULL,
   `SymptomsName` varchar(255) NOT NULL,
   `diseases_Name` varchar(255) DEFAULT NULL,
-  `created_date` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_date` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -189,36 +189,36 @@ CREATE TABLE `symptoms` (
 --
 
 INSERT INTO `symptoms` (`SymptomsId`, `SymptomsName`, `diseases_Name`, `created_date`) VALUES
-(1, 'pain chest', 'hypertensive', '2021-06-02 16:06:44'),
-(2, 'shortness of breath', 'hypertensive', '2021-06-02 16:06:44'),
-(3, 'dizziness', 'hypertensive', '2021-06-02 16:06:44'),
-(4, 'asthenia', 'hypertensive', '2021-06-02 16:06:44'),
-(5, 'syncope', 'hypertensive', '2021-06-02 16:06:44'),
-(6, 'vertigo', 'hypertensive', '2021-06-02 16:06:44'),
-(7, 'sweating increased', 'hypertensive', '2021-06-02 16:06:44'),
-(8, 'palpitation', 'hypertensive', '2021-06-02 16:06:44'),
-(9, 'nausea', 'hypertensive', '2021-06-02 16:06:44'),
-(10, 'angina pectoris', 'hypertensive', '2021-06-02 16:06:44'),
-(11, 'pressure chest', 'diabetes', '2021-06-02 16:08:50'),
-(12, 'polyuria', 'diabetes', '2021-06-02 16:08:50'),
-(13, 'polydypsia', 'diabetes', '2021-06-02 16:08:50'),
-(14, 'shortness of breath', 'diabetes', '2021-06-02 16:08:50'),
-(15, 'orthopnea', 'diabetes', '2021-06-02 16:08:50'),
-(16, 'rale', 'diabetes', '2021-06-01 16:08:50'),
-(17, 'unresponsiveness', 'diabetes', '2021-06-01 16:08:50'),
-(18, 'mental status changes', 'diabetes', '2021-06-02 16:06:44'),
-(19, 'vomiting', 'diabetes', '2021-06-03 16:08:50'),
-(20, 'labored breathing', 'diabetes', '2021-06-01 16:08:50'),
-(21, 'Fever', 'COVID-19', '2021-06-02 16:06:44'),
-(22, 'Cough', 'COVID-19', '2021-06-02 16:06:44'),
-(23, 'Fatigue', 'COVID-19', '2021-06-02 16:06:44'),
-(24, 'Muscle aches', 'COVID-19', '2021-06-02 16:06:44'),
-(25, 'Headache', 'COVID-19', '2021-06-02 16:06:44'),
-(26, 'loss of taste or smell', 'COVID-19', '2021-06-02 16:06:44'),
-(27, 'Sore throat', 'COVID-19', '2021-06-02 16:06:44'),
-(28, 'Congestion or runny nose', 'COVID-19', '2021-06-02 16:06:44'),
-(29, 'Nausea or vomiting', 'COVID-19', '2021-06-02 16:06:44'),
-(30, 'Diarrhea', 'COVID-19', '2021-06-02 16:06:44');
+(1, 'pain chest', 'hypertensive', '2021-06-02'),
+(2, 'shortness of breath', 'hypertensive', '2021-06-02'),
+(3, 'dizziness', 'hypertensive', '2021-06-02'),
+(4, 'asthenia', 'hypertensive', '2021-06-02'),
+(5, 'syncope', 'hypertensive', '2021-06-02'),
+(6, 'vertigo', 'hypertensive', '2021-06-02'),
+(7, 'sweating increased', 'hypertensive', '2021-06-02'),
+(8, 'palpitation', 'hypertensive', '2021-06-02'),
+(9, 'nausea', 'hypertensive', '2021-06-02'),
+(10, 'angina pectoris', 'hypertensive', '2021-06-02'),
+(11, 'pressure chest', 'diabetes', '2021-06-02'),
+(12, 'polyuria', 'diabetes', '2021-06-02'),
+(13, 'polydypsia', 'diabetes', '2021-06-02'),
+(14, 'shortness of breath', 'diabetes', '2021-06-02'),
+(15, 'orthopnea', 'diabetes', '2021-06-02'),
+(16, 'rale', 'diabetes', '2021-06-01'),
+(17, 'unresponsiveness', 'diabetes', '2021-06-01'),
+(18, 'mental status changes', 'diabetes', '2021-06-02'),
+(19, 'vomiting', 'diabetes', '2021-06-03'),
+(20, 'labored breathing', 'diabetes', '2021-06-01'),
+(21, 'Fever', 'COVID-19', '2021-06-02'),
+(22, 'Cough', 'COVID-19', '2021-06-02'),
+(23, 'Fatigue', 'COVID-19', '2021-06-02'),
+(24, 'Muscle aches', 'COVID-19', '2021-06-02'),
+(25, 'Headache', 'COVID-19', '2021-06-02'),
+(26, 'loss of taste or smell', 'COVID-19', '2021-06-02'),
+(27, 'Sore throat', 'COVID-19', '2021-06-02'),
+(28, 'Congestion or runny nose', 'COVID-19', '2021-06-02'),
+(29, 'Nausea or vomiting', 'COVID-19', '2021-06-02'),
+(30, 'Diarrhea', 'COVID-19', '2021-06-02');
 
 -- --------------------------------------------------------
 
@@ -349,7 +349,7 @@ ALTER TABLE `pwdreset`
 -- AUTO_INCREMENT for table `symptoms`
 --
 ALTER TABLE `symptoms`
-  MODIFY `SymptomsId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `SymptomsId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `users`

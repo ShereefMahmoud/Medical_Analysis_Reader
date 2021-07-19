@@ -62,7 +62,7 @@ error_reporting(0);
 
 
 
-
+<div class="admin-page">
     <div id="update">
     <h2 class="text-center bg-info py-3 text-white my-2">Update Info About Admin</h2>
   
@@ -75,5 +75,6 @@ error_reporting(0);
         <h5 class="alert alert-success text-center"><?php echo $success; ?></h5>
     <?php endif;  ?>
     </div>
+</div>
 
 <?php  include('footer.php'); ?>
